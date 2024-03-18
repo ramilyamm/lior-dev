@@ -19,3 +19,8 @@ export type IPortfolioData = {
     portfolio_description: string
     portfolio_image: string
 }
+
+export type ServiseAbout = {
+    offers_title: string
+    offers_description: string
+}

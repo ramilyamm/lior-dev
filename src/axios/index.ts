@@ -17,5 +17,9 @@ export const liorAPI = {
     },
     getPortfolio() {
         return instance.get(`portfolio_leordev/`)
+    },
+    getService() {
+        return instance.get(`offers/`)
     }
+
 }
