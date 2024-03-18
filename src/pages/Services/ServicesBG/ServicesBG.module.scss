@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;400;500;600;700&family=Prompt:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+.BgService {
+    background-image: url('../../../Assets/serviceImg/serviceBg.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    position: relative;
+    margin: 20px auto 100px;
+
+
+    .BgWhite {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 68%;
+        height: 100%;
+        background: rgb(47, 51, 46);
+        background: linear-gradient(90deg,
+                rgba(47, 51, 46, 0.8715861344537815) 0%,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 1) 36%,
+                rgba(255, 255, 255, 0.8183648459383753) 64%,
+                rgba(255, 255, 255, 0) 100%);
+
+    }
+
+
+    .BgServiceTitle {
+        width: 100%;
+        position: absolute;
+        left: 128px;
+        top: 145px;
+
+        .title {
+            font-family: "Source Sans 3", sans-serif;
+            font-weight: 700;
+            font-size: 52.46px;
+            color: #000;
+            text-transform: uppercase;
+            width: 50%;
+        }
+
+        @media (max-width:1340px) {
+            .title {
+                width: 70%;
+            }
+        }
+
+        @media (max-width:1024px) {
+            .title {
+                font-size: 45px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width:768px) {
+            .title {
+                font-size: 40px;
+                width: 100%;
+            }
+        }
+
+
+        @media (max-width:500px) {
+            .title {
+                font-size: 30px;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        .greenTitle {
+            color: rgb(123, 213, 84);
+        }
+    }
+
+
+}
+
+@media (max-width: 1440px) {
+    .BgService {
+        width: 100%;
+    }
+}

@@ -5,10 +5,16 @@
 
 
 .container {
-    max-width: 86%;
+    max-width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 
+@media (max-width:1440px) {
+    .container {
+        width: 86.1%;
+    }
+}
 
 h1,
 h2,

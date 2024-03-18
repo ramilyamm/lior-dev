@@ -21,4 +21,9 @@ export const liorAPI = {
 	getPhotos() {
 		return instance.get('image_portfolio_leordev/')
 	},
+ 
+    getService() {
+        return instance.get(`offers/`)
+    }
+
 }
