@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+.card {
+	max-width: 390px;
+	min-height: 285px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 53px 33px 11px 26px;
+	box-sizing: border-box;
+	border-radius: 20px;
+
+	backdrop-filter: blur(13.88px);
+	background: linear-gradient(
+		180deg,
+		rgba(53, 53, 55, 0.29) 62.177%,
+		rgba(53, 53, 55, 0) 100%
+	);
+}
+.card_text {
+	margin-bottom: 20px;
+	color: rgb(209, 208, 202);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 147.8%;
+	letter-spacing: 0%;
+	text-align: left;
+	margin-bottom: 20px;
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.card_text::-webkit-scrollbar {
+	width: 5px;
+}
+
+.card_text::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+.card_content {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.card_author {
+	display: flex;
+	flex-direction: column;
+}
+.content_img {
+	width: 100.1px;
+	height: 44.83px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+h3 {
+	color: rgb(209, 208, 202);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 147.8%;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.slick-slide > div {
+	margin: 0 10px;
+}

@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect } from 'react'
 import s from './Home.module.scss'
 import Form from '../../pages/Form/Form';
 import { useAppDispatch } from '../../Store/Hooks/hooks';
@@ -14,27 +14,28 @@ import TopSect from '../../components/TopSect/TopSect';
 import Studio from '../../components/Studio/Studio';
 
 
+
 const Home: FC = () => {
-    const dispatch = useAppDispatch()
+	const dispatch = useAppDispatch()
 
-    useEffect(() => {
-        dispatch(fetchByGetListReviews());
-        dispatch(fetchByGetPortfolio())
-    }, [dispatch])
+	useEffect(() => {
+		dispatch(fetchByGetPortfolio())
+	}, [dispatch])
 
-    return (
-        <div>
-            <TopSect />
-            <Studio />
-            <Process />
-            <Form />
-            <Use />
-            <Portfolio />
-            <Partners />
-            {/* <Reviews /> */}
-            <Brif />
-        </div >
-    );
+	return (
+		<div>
+			<TopSect />
+			<Studio />
+			<Process />
+			<Form />
+			<Use />
+			<Portfolio />
+			<Partners />
+			{/* <Reviews /> */}
+			<Brif />
+		</div >
+	);
 };
 
 export default Home;
+

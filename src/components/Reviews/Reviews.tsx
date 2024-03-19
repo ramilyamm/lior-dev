@@ -14,7 +14,7 @@ const Reviews = () => {
                     {
                         review_list.length > 0 &&
                         review_list.map(el => (
-                            <ReviewsCard key={el.id} el={el} />
+                            <ReviewsCard key={el.id} />
                         ))
                     }
                 </div>
