@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 80px;
 }
 
 .brif_title {
@@ -13,6 +12,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    margin-bottom: 80px;
 }
 
 .brif_btn {
@@ -31,6 +31,10 @@
     background: rgb(230, 161, 75);
 }
 
+.ellipse_top {
+    margin: 145px 0 19px 10px;
+}
+
 .ellipse_bottom {
     float: right;
     margin: 0 102px 49px 0;
@@ -39,5 +43,18 @@
 @media (max-width:1440px) {
     .brif_title {
         font-size: 36px;
+    }
+}
+
+@media (max-width:950px) {
+    .brif_btn {
+        width: 447px;
+        padding: 20px 63px;
+    }
+
+    .brif_title {
+        font-weight: 700;
+        font-size: 33px;
+        margin-bottom: 60px;
     }
 }
