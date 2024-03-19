@@ -1,0 +1,53 @@
+.bg {
+    background: url('../../Assets/image/Ramilya/bg_nav.png') center / cover no-repeat;
+    object-position: center;
+    height: 90vh;
+}
+
+.lior_text {
+    padding-top: 130px;
+    max-width: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    line-height: 126%;
+    letter-spacing: 6%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.btn_header {
+    margin-top: 45px;
+    width: 249px;
+    height: 51px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgba(230, 161, 75, 0.4);
+    background: rgb(230, 161, 75);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width:1440px) {
+    .bg {
+        background: url('../../Assets/image/Ramilya/bg_nav.png') center / cover no-repeat;
+        height: 130vh;
+    }
+
+    .lior_text {
+        max-width: 58%;
+    }
+}
+
+@media (max-width:960px) {
+    .lior_text {
+        font-size: 40px;
+    }
+}

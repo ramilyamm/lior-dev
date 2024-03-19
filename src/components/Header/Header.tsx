@@ -1,11 +1,17 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import s from './Header.module.scss'
 import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/image/Ramilya/logo.png'
 import tel from '../../Assets/image/Ramilya/tel.png'
 import adres from '../../Assets/image/Ramilya/adres.png'
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header: FC = () => {
+    const [modal, setModal] = useState(false)
+    const getModal = () => {
+        setModal(!modal)
+    }
+
     return (
         <div className={s.header}>
             <div className='container'>
@@ -38,8 +44,7 @@ const Header: FC = () => {
                         <NavLink to={'/services'}>
                             <h2 className={s.nav_title}>УСЛУГИ</h2>
                         </NavLink>
-                        <a href="#partners"></a>
-                        <h2 className={s.nav_title}>партнеры</h2>
+                        <a href="#partners"> <h2 className={s.nav_title}>партнеры</h2></a>
                         <select className={s.select}>
                             <option value="ru">ру</option>
                             <option value="eng">eng</option>
@@ -48,8 +53,10 @@ const Header: FC = () => {
                             <button className={s.btn_nav}>онлайн-запрос</button>
                         </NavLink>
                     </div>
+                    <button className={s.btn} onClick={() => setModal(!modal)}> <img src={logo} alt="burger" /> </button>
                 </div>
             </header>
+            {modal && <BurgerMenu setModal={setModal} modal={modal} />}
         </div>
     );
 };

@@ -1,0 +1,12 @@
+.image {
+    width: 382px;
+    height: 223px;
+    border-radius: 20px;
+    box-shadow: 0 3px 30px 4px rgba(206, 204, 205, 0.3);
+}
+
+.image:hover {
+    width: 410px;
+    height: 239px;
+    transition: 0.4s;
+}

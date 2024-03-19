@@ -25,7 +25,7 @@ export const fetchByGetListReviews = createAsyncThunk<IReviewsData[], void, { re
             return rejectWithValue('Error')
         }
 
-        return res.data
+        return res.data as IReviewsData[]
 
     }
 )

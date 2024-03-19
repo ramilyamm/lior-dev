@@ -16,6 +16,7 @@ export type IReviewsData = {
 }
 
 export type IPortfolioData = {
+    id: number
     portfolio_description: string
     portfolio_image: string
 }

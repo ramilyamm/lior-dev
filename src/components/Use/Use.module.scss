@@ -1,0 +1,63 @@
+.stamps_title {
+    margin: 50px 0 44px;
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.stamps_wrapper {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    // gap: 44px;
+    margin-top: 44px;
+
+    .stamps_block_top {
+        flex-shrink: 0;
+        display: flex;
+        gap: 20px;
+        counter-reset: item;
+        justify-content: space-around;
+        min-width: 100%;
+        animation: scrolltop 20s linear infinite;
+    }
+
+    .stamps_block_down {
+        flex-shrink: 0;
+        display: flex;
+        gap: 20px;
+        counter-reset: item;
+        justify-content: space-around;
+        min-width: 100%;
+        animation: scrolldown 20s linear infinite;
+    }
+
+    @keyframes scrolldown {
+        from {
+            transform: translateX(calc(-50% - 20px));
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scrolltop {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-60% - 20px));
+        }
+    }
+}
+
+.partners_sect {
+    margin: 50px 0;
+}

@@ -1,0 +1,37 @@
+.sect_portfolio {
+    margin: 50px 0;
+
+    .title_portfolio {
+        margin: 50px;
+        color: rgb(255, 255, 255);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .link_portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-align: center;
+        color: #ededed;
+    }
+}
+
+.portfolio_card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
