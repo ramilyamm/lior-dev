@@ -10,8 +10,8 @@ const Studio = () => {
             <h2 className={s.title}>СТУДИЯ   ВЕБ-ДИЗАЙНА И РАЗРАБОТКИ</h2>
             <div className='container'>
                 <div className={s.services_wp}>
-                    <div>
-                        <img className={s.services_img} src={services_img} alt="services_img" />
+                    <div className={s.services_img}>
+                        <img src={services_img} alt="services_img" />
                     </div>
                     <div className={s.services_right}>
                         <h2 className={s.right_title}>СПЕКТР УСЛУГ</h2>
@@ -24,7 +24,9 @@ const Studio = () => {
                     </div>
 
                 </div>
-                <img className={s.el2} src={el2} alt="el2" />
+                <div className={s.el2}>
+                    <img src={el2} alt="el2" />
+                </div>
             </div>
         </section>
     );

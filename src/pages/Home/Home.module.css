@@ -1,3 +1,23 @@
+.Home {
+    position: relative;
+
+    .LeftCircle {
+        position: absolute;
+        left: 0;
+        top: 68%;
+    }
+
+    .TopCircle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .RightCircle {
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
 .cardBlock {
     max-width: 1440px;
     margin: 0 auto;
@@ -9,4 +29,5 @@
     font-weight: 700;
     font-size: 36px;
     color: #fff;
+}
 }
