@@ -1,0 +1,203 @@
+.banner {
+  background-image: url("../../../../../liordev/lior-dev/src/Assets/image/AboutUs/banner.png");
+  background-repeat: no-repeat;
+
+  height: 422px;
+  padding-top: 145px;
+  padding-left: 128px;
+}
+
+h1{
+  width: 337px;
+  height: 132px;
+  top: 145px;
+  left: 128px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+b{
+  color: #7BD554;
+}
+
+.history {
+  display: flex;
+  margin-top: 100px;
+  height: 416.91px;
+  top: 655px;
+  left: 100px;
+  gap: 51px;
+}
+
+.history_info {
+  width: 590px;
+  height: 333px;
+  padding: 56px 0 0 0;
+  gap: 21px;
+
+}
+
+.history_title  {
+  width: 372px;
+  height: 46px;
+  padding: 8px 23px 8px 23px;
+  gap: 10px;
+  border-radius: 6px;
+  background: #7BD554;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.145em;
+  text-align: center;
+}
+
+.history_text {
+  margin-top: 21px;
+  width: 510px;
+  height: 210px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #CECCCD;
+
+}
+
+.info {
+  margin-top: 100px;
+  height:366px;
+  left: 100px;
+  gap: 21px;
+}
+
+h3 {
+  margin-bottom: 21px;
+  width: 443px;
+  height: 42px;
+  angle: -0 deg;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.info_comment {
+  background: url("../../../../../liordev/lior-dev/src/Assets/image/AboutUs/Comment.png");
+  width: 1239px;
+  height: 302px;
+  top: 63.73px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_text{
+  padding-top: 31px;
+  width: 910px;
+  height: 112px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.team {
+  width: 1200px;
+  margin-top: 100px;
+  top: 2135px;
+  left: 120px;
+  gap: 50px;
+}
+
+.team_text {
+  width: 1100px;
+  height: 90px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #CECCCD;
+}
+
+.team_cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.faq {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq_table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1045px;
+  top: 3639px;
+  left: 197px;
+  padding: 108px 160px 108px 160px;
+  gap: 10px;
+  border-radius: 15px;
+  background: #f5f5f5;
+}
+
+.faq_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 478px;
+  height: 104px;
+  gap: 10px;
+
+}
+
+.faq_title {
+  width: 123px;
+  height: 30px;
+  padding: 0 42px 0 42px ;
+  gap: 10px;
+  border-radius: 20px;
+  background:#4EAF4E;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.145em;
+  text-align: center;
+
+}
+
+.faq_text h4{
+  width: 389px;
+  height: 52px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
