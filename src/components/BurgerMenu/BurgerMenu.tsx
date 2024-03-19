@@ -38,7 +38,7 @@ const BurgerMenu: FC<MenuProps> = ({ setModal, modal }) => {
     return (
         <div onClick={getModal} className={s.burgermenu}>
             <div onClick={(e) => e.stopPropagation()} className={s.navbar}>
-                <span onClick={getModal} className={s.close}>&#10006;</span>
+                <span onClick={getModal} className={s.cross}></span>
                 <NavLink to={'/'}>
                     <h2 className={s.nav_title}>главная</h2>
                 </NavLink>
@@ -51,6 +51,7 @@ const BurgerMenu: FC<MenuProps> = ({ setModal, modal }) => {
                 <NavLink to={'/services'}>
                     <h2 className={s.nav_title}>УСЛУГИ</h2>
                 </NavLink>
+                <a href="#partners"> <h2 className={s.nav_title}>партнеры</h2></a>
                 <select className={s.select}>
                     <option value="ru">ру</option>
                     <option value="eng">eng</option>

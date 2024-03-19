@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/image/Ramilya/logo.png'
 import tel from '../../Assets/image/Ramilya/tel.png'
 import adres from '../../Assets/image/Ramilya/adres.png'
+import menu from '../../Assets/image/Ramilya/burger.png'
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header: FC = () => {
@@ -53,7 +54,11 @@ const Header: FC = () => {
                             <button className={s.btn_nav}>онлайн-запрос</button>
                         </NavLink>
                     </div>
-                    <button className={s.btn} onClick={() => setModal(!modal)}> <img src={logo} alt="burger" /> </button>
+                    <button className={s.btn} onClick={() => setModal(!modal)}>
+                        <div className={s.line}></div>
+                        <div className={s.line}></div>
+                        <div className={s.line}></div>
+                    </button>
                 </div>
             </header>
             {modal && <BurgerMenu setModal={setModal} modal={modal} />}

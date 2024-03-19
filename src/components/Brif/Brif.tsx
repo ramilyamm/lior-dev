@@ -6,6 +6,7 @@ import brif_ellipse from '../../Assets/image/Ramilya/brif_bg.png'
 const Brif = () => {
     return (
         <>
+            <img className={s.ellipse_top} src={brif_ellipse} alt="ellipse" />
             <section>
                 <div className={s.brif_wrapper}>
                     <h2 className={s.brif_title}>Давайте сделаем что-нибудь вместе :)</h2>
