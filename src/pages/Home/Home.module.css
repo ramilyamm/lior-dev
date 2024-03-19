@@ -1,0 +1,21 @@
+.Home {
+    position: relative;
+
+    .LeftCircle {
+        position: absolute;
+        left: 0;
+        top: 68%;
+    }
+
+    .TopCircle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .RightCircle {
+        position: absolute;
+        right: 0;
+        top: 20%;
+    }
+}

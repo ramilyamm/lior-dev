@@ -4,9 +4,17 @@
     justify-content: space-between;
 }
 
+.ui {
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
 .project_left {
-    padding-right: 34px;
     color: rgb(255, 255, 255);
+    width: 54%;
 
     h2 {
         font-family: 'Roboto Slab', sans-serif;
@@ -88,17 +96,20 @@
 }
 
 
-@media(max-width:1140px) {
+@media(max-width:1140px) {}
 
-    .ui {
-        width: 450px;
-        height: 450px;
-    }
-}
-
-@media(max-width:940px) {
+@media(max-width:1024px) {
     .project_wp {
         display: flex;
         flex-direction: column;
+    }
+
+    .project_wp .project_left {
+        width: 100%;
+    }
+
+    .project_wp .ui {
+        width: 70%;
+        margin-top: 10px;
     }
 }

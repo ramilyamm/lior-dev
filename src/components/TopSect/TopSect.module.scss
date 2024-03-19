@@ -1,21 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 .bg {
-    background: url('../../Assets/image/Ramilya/bg_nav.png') center / cover no-repeat;
+    background: url('../../Assets/image/Ramilya/bgHome.png') center / cover no-repeat;
     object-position: center;
-    height: 90vh;
+    height: 70vh;
+    position: relative;
+
+
+    .RightTile {
+        position: absolute;
+        right: 0px;
+        bottom: -160px;
+        width: 65%;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
-.lior_text {
-    padding-top: 130px;
-    max-width: 50%;
-    color: rgb(255, 255, 255);
-    font-size: 44px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    line-height: 126%;
-    letter-spacing: 6%;
-    text-align: left;
-    text-transform: uppercase;
+.BgWhite {
+    max-width: 1920px;
+    background-color: #fff;
+    height: 150px;
 }
+
+.BgBox {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+
+
+    .LeftTitle {
+        width: 50%;
+
+        .lior_text {
+            font-family: "Source Sans 3", sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 126%;
+            letter-spacing: 6%;
+            text-transform: uppercase;
+        }
+
+    }
+
+}
+
 
 .btn_header {
     margin-top: 45px;
@@ -36,13 +71,17 @@
 }
 
 @media (max-width:1440px) {
-    .bg {
-        background: url('../../Assets/image/Ramilya/bg_nav.png') center / cover no-repeat;
-        height: 130vh;
+    .bg .BgBox {
+        width: 86.1%;
     }
 
-    .lior_text {
-        max-width: 58%;
+    .bg .BgBox .LeftTitle {
+        width: 100%;
+    }
+
+    .bg .BgBox .LeftTitle .lior_text {
+        font-size: 40px;
+        width: 60%;
     }
 }
 

@@ -54,8 +54,8 @@ const Process = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img className={s.ui} src={ui} alt="img" />
+                <div className={s.ui}>
+                    <img src={ui} alt="img" />
                 </div>
             </div>
         </section>
