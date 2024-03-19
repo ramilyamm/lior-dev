@@ -54,8 +54,12 @@ const Form: FC = () => {
         setSuccess(true)
     }
 
+    const toggleClientData = (key: string, value: string) => {
+        setFeedbackData({ ...feedbackData, [key]: value })
+    }
+
     if (loading) {
-        <Loading />
+        return <Loading />
     }
     return (
         <>
@@ -67,18 +71,17 @@ const Form: FC = () => {
                             <div>Быстрый доступ</div>
                             <h2>Связаться с нами. Это просто.</h2>
                             <h3>ЗАКАЗ УСЛУГ, IT КОНСУЛЬТАЦИЯ</h3>
-                            <a href="tel: +996 555 222 333">+996 555 222 333</a>
-                            <a href="tel: +996 555 222 333">+996 555 222 333</a>
+                            <a href="tel: +996 705 121 928">+996 705 121 928</a>
                             <a className={s.form_mail} href="mailto:liordev@gmail.com"><span>E-mail:</span> liordev@gmail.com</a>
                         </div>
 
-                        <form onSubmit={handleForm}>
+                        <form className={s.form_right} onSubmit={handleForm}>
                             <div className={s.inputs_wrapper}>
                                 <div className={s.inputs_block}>
                                     <p className={s.inp_title}>Полное имя</p>
                                     <input className={s.inputs_top}
                                         value={feedbackData.application_name}
-                                        onChange={(e) => setFeedbackData({ ...feedbackData, application_name: e.target.value })}
+                                        onChange={(e) => toggleClientData('application_name', e.target.value)}
                                         type="text" placeholder='Алексей Косараев '
                                     />
                                     {eerror === 'Введите Имя' && (
@@ -89,7 +92,7 @@ const Form: FC = () => {
                                     <p className={s.inp_title}>Email</p>
                                     <input className={s.inputs_top}
                                         value={feedbackData.application_email}
-                                        onChange={(e) => setFeedbackData({ ...feedbackData, application_email: e.target.value })}
+                                        onChange={(e) => toggleClientData('application_email', e.target.value)}
                                         type="email" placeholder='consult@mail.com' />
                                     {eerror === 'Введите корректный Email.' && (
                                         <p className={s.error}>Введите корректный Email.</p>
@@ -101,8 +104,8 @@ const Form: FC = () => {
                                     <p className={s.inp_title}>Телефон или мессенджер</p>
                                     <input className={s.inputs_top}
                                         value={feedbackData.application_number}
-                                        onChange={(e) => setFeedbackData({ ...feedbackData, application_number: e.target.value })}
-                                        type="tel" placeholder='+996 444 666 777' />
+                                        onChange={(e) => toggleClientData('application_number', e.target.value)}
+                                        type="tel" placeholder='+996xxxxxxxxx' />
                                     {eerror === 'Введите номер телефона.' && (
                                         <p className={s.error}>Введите номер телефона.</p>
                                     )}
@@ -111,27 +114,29 @@ const Form: FC = () => {
                                     <p className={s.inp_title}>Компания (необязательно)</p>
                                     <input className={s.inputs_top}
                                         value={feedbackData.application_company}
-                                        onChange={(e) => setFeedbackData({ ...feedbackData, application_company: e.target.value })}
+                                        onChange={(e) => toggleClientData('application_company', e.target.value)}
                                         type="text" placeholder='yourcompany.com' />
                                 </div>
                             </div>
                             <p className={s.inp_title}>Выберите вид услуги</p>
-                            <input className={s.inp_mob_apps}
-                                value={feedbackData.application_offer}
-                                onChange={(e) => setFeedbackData({ ...feedbackData, application_offer: e.target.value })}
-                                type="text" placeholder='Мобильные приложения' />
 
-                            {/* <select className={s.inp_mob_apps}
+                            <select className={s.inp_mob_apps}
                                 onChange={(e) => setFeedbackData({ ...feedbackData, application_offer: e.target.value })}>
                                 <option className={s.inp_mob_apps}
-                                    value={feedbackData.application_offer}>Мобильные приложения</option>
-                            </select> */}
+                                    value='Создание сайта с адаптивным дизайном'>Создание сайта с адаптивным дизайном</option>
+                                <option className={s.inp_mob_apps}
+                                    value='Оптимизация и SEO'>Оптимизация и SEO</option>
+                                <option className={s.inp_mob_apps}
+                                    value='WEB-разработка'>WEB-разработка</option>
+                                <option className={s.inp_mob_apps}
+                                    value='Мобильные приложения'>Мобильные приложения</option>
+                            </select>
 
 
                             <p className={s.inp_title}>Сообщение</p>
                             <textarea className={s.inp_sms}
                                 value={feedbackData.application_description}
-                                onChange={(e) => setFeedbackData({ ...feedbackData, application_description: e.target.value })}
+                                onChange={(e) => toggleClientData('application_description', e.target.value)}
                                 placeholder='Кратко расскажите нам о вашем проекте и ваших
                              текущих целях. Чем мы можем вам помочь?' />
                             <div>

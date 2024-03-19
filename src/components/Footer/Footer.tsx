@@ -7,7 +7,7 @@ import whatsapp from '../../Assets/image/Ramilya/whatsapp.png'
 
 const Footer: FC = () => {
     return (
-        <footer className={`${s.j} ${s.footer}`}>
+        <footer className={s.footer}>
             <div className='container'>
                 <div className={s.wrapper}>
                     <div>

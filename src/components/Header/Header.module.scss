@@ -27,10 +27,11 @@
 
 
 .wrapper {
-    padding-top: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
+    backdrop-filter: blur(15px);
 }
 
 .navbar {
@@ -64,3 +65,25 @@
     text-align: center;
     color: #000;
 }
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+}
+
+
+
+
+// @media (max-width:975px) {
+//     .navbar {
+//         width: 60%;
+//     }
+// }
+
+
+// @media (max-width:975px) {
+//     .navbar {
+//         display: none;
+//     }
+// }

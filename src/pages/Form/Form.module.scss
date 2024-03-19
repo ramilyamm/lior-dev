@@ -27,6 +27,10 @@
     padding: 29px 20px 26px;
 }
 
+.form_right {
+    padding: 0 42px;
+}
+
 .form_left {
     padding: 0 39px;
     max-width: 40%;
@@ -35,10 +39,10 @@
         font-family: 'Source Sans Pro', sans-serif;
         margin-top: 32px;
         border-radius: 6px;
-        padding: 8px 0;
+        padding: 8px 23px;
         width: 274px;
         height: 46px;
-        background: #E6A14B;
+        background: #7BD554;
         font-weight: 600;
         font-size: 20px;
         line-height: 148%;
@@ -120,7 +124,7 @@
     border: 1px solid #c1c1c1;
     border-radius: 6px;
     padding: 22px 33px;
-    width: 318px;
+    width: 100%;
     height: 68px;
     color: #000;
     font-family: 'Poppins', sans-serif;
@@ -136,7 +140,8 @@
     border: 1px solid #c1c1c1;
     border-radius: 10px;
     padding: 22px 33px;
-    width: 666px;
+    // width: 666px;
+    width: 100%;
     height: 68px;
     color: #000;
     font-size: 16px;
@@ -151,7 +156,8 @@
     border: 1px solid #c1c1c1;
     border-radius: 10px;
     padding: 22px 33px;
-    width: 666px;
+    // width: 666px;
+    width: 100%;
     height: 181px;
     text-align: left;
     font-weight: 400;
@@ -179,4 +185,52 @@
 
 .error {
     color: white;
+}
+
+
+@media (max-width:1440px) {
+
+    .form_left {
+        max-width: 50%;
+    }
+}
+
+@media (max-width:1030px) {
+    .form_left {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:930px) {
+    .form_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form_left {
+        padding: 0;
+
+        div {
+            width: 224px;
+            height: 36px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    .form_right {
+        padding: 0;
+    }
+}
+
+@media (max-width:880px) {
+    .sect_form_wp {
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
 }

@@ -27,7 +27,10 @@ export const fetchByGetListReviews = createAsyncThunk<
 	}
 
 	return res.data as IReviewsData[]
-})
+
+}
+)
+
 
 const reviewSlice = createSlice({
 	name: 'review',

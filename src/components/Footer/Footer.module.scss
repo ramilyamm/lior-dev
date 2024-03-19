@@ -1,31 +1,17 @@
 .footer {
     margin-top: 129px;
-    border: 1px solid #ffffff;
+    border-top: 1px solid #F7F3E0;
     border-radius: 20px 20px 0 0;
-    padding: 40px 70px;
+    padding: 107px 100px 70px;
     height: 376px;
     backdrop-filter: blur(13.880000114440918px);
+    width: 100%;
 }
 
 
 .wrapper {
-    // position: relative;
-    margin-top: 107px;
     display: flex;
     justify-content: space-between;
-
-    // &::after {
-    //     content: '-';
-    //     width: 180px;
-    //     display: inline;
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0px;
-    //     font-size: 20px;
-    //     font-weight: 400;
-    // color: rgb(123, 213, 84);
-    // }
-
 }
 
 .description {
@@ -72,5 +58,15 @@
 @media (max-width:1440px) {
     .footer {
         width: 100%;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1000px) {
+    .wrapper {
+        gap: 30px;
     }
 }

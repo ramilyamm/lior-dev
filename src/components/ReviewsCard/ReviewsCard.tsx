@@ -9,6 +9,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { fetchByGetListReviews } from '../../Store/slices/reviewsSlice'
 
+
+
 const ReviewsCard: FC = () => {
 	const dispatch = useAppDispatch()
 	const { error, loading, review_list } = useAppSelector(state => state.review)

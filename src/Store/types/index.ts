@@ -15,10 +15,7 @@ export type IReviewsData = {
 	reviews_image: string
 }
 
-export type IPortfolioData ={
-	portfolio_description: string
-	portfolio_image: string
-}
+
 
 export type IPhotos = {
 	id: number
@@ -26,7 +23,12 @@ export type IPhotos = {
 }
 
 export type ServiseAbout = {
-    offers_title: string
-    offers_description: string
+	offers_title: string
+	offers_description: string
 }
 
+export type IPortfolioData = {
+	id: number
+	portfolio_description: string
+	portfolio_image: string
+}
