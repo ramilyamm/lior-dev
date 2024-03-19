@@ -22,7 +22,7 @@
 
 
 .header {
-    // background: url('../../Assets/image/Ramilya/bg_nav.png') top/ cover no-repeat;
+    background: url('../../Assets/image/Ramilya/background.png') top/ cover no-repeat;
 }
 
 
@@ -66,24 +66,37 @@
     color: #000;
 }
 
-@media (max-width: 1024px) {
-    .navbar {
-        display: none;
-    }
+.btn {
+    display: none;
+    background-color: transparent;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    margin: 8px;
+    background-color: #fff;
 }
 
 
+@media (min-width: 768px) and (max-width: 1110px) {
+    .navbar {
+        gap: 25px;
+    }
 
+    .btn {
+        display: none;
+    }
 
-// @media (max-width:975px) {
-//     .navbar {
-//         width: 60%;
-//     }
-// }
+}
 
+@media (max-width: 768px) {
 
-// @media (max-width:975px) {
-//     .navbar {
-//         display: none;
-//     }
-// }
+    .navbar {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+}

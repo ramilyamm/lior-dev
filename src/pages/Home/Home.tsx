@@ -4,7 +4,6 @@ import Form from '../../pages/Form/Form';
 import { useAppDispatch } from '../../Store/Hooks/hooks';
 import { fetchByGetListReviews } from '../../Store/slices/reviewsSlice';
 import { fetchByGetPortfolio } from '../../Store/slices/portfolioSlice';
-import Reviews from '../../components/Reviews/Reviews';
 import Brif from '../../components/Brif/Brif';
 import Portfolio from '../../components/Portfolio/Portfolio';
 import Process from '../../components/Process/Process';
@@ -16,6 +15,8 @@ import RightCircle from '../../Assets/image/Ramilya/Rig.png'
 import LeftCircle from '../../Assets/image/Ramilya/Ellipse 185.png'
 import TopCircle from '../../Assets/image/Ramilya/topCircle.png'
 import ReviewsCard from '../../components/ReviewsCard/ReviewsCard';
+
+
 
 
 const Home: FC = () => {
@@ -37,6 +38,10 @@ const Home: FC = () => {
 			<Use />
 			<Portfolio />
 			<Partners />
+			<div className={s.cardBlock}>
+				<h2 className={s.title}>ЧТО ГОВОРЯТ ПРО НАС</h2>
+				<ReviewsCard />
+			</div>
 			<Brif />
 		</div >
 	);

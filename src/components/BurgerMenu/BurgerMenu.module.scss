@@ -1,28 +1,48 @@
 .burgermenu {
     position: fixed;
     top: 0;
-    left: 40;
+    right: 20px;
     width: 275px;
-    background-color: rgba(0, 0, 0, 0.591);
     border-radius: 10px;
     z-index: 10;
 }
 
 .navbar {
     display: flex;
-    // width: 100%;
     height: auto;
     padding: 15px;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     border-radius: 10px;
-    background-color: gray;
+    background: url('../../Assets//image/Ramilya/modal_bg.png');
     margin-top: 45px;
 }
 
-.close {
-    cursor: pointer;
+
+.cross {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+.cross::before,
+.cross::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.cross::before {
+    transform: rotate(45deg);
+}
+
+.cross::after {
+    transform: rotate(-45deg);
 }
 
 .nav_title {
