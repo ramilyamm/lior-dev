@@ -18,6 +18,12 @@ export const liorAPI = {
 	getPortfolio() {
 		return instance.get(`portfolio_leordev/`)
 	},
+	getTeam(){
+		return instance.get(`team_leordev/`)
+	},
+	getFaq(){
+		return instance.get(`faq_leordev/`)
+	},
 	getPhotos() {
 		return instance.get('image_portfolio_leordev/')
 	},
