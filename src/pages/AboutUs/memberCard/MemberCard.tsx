@@ -15,6 +15,7 @@ const TeamMemberCard: React.FC<Props> = ({ member }) => {
     return (
         <div className={s.card}>
             <img src={member.team_leordev_image} alt={member.team_leordev_name} />
+            {/*<span className={s.position}>{member.team_job}</span>*/}
             <h6>{member.team_leordev_name}</h6>
             <p>{member.team_leordev_description}</p>
             <div className={s.card_socials}>
