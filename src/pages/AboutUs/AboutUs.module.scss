@@ -1,8 +1,8 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px; /* 100px отступы с обеих сторон */
-  box-sizing: border-box; /* учитываем padding в общей ширине контейнера */
+  padding: 0 100px;
+  box-sizing: border-box;
 }
 
 .banner {
