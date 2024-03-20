@@ -32,14 +32,3 @@ export type IPortfolioData = {
 	portfolio_description: string
 	portfolio_image: string
 }
-
-
-export interface TeamMember {
-	id: number;
-	team_leordev_name: string;
-	team_leordev_description: string;
-	team_leordev_image: string;
-	team_leordev_url_1?: string;
-	team_leordev_url_2?: string;
-	team_leordev_url_3?: string;
-}
