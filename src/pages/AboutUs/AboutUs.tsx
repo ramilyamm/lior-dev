@@ -27,7 +27,7 @@ const AboutUs: FC = () => {
     }, []);
 
     return (
-        <div>
+        <div className={s.about_us}>
             <section className={s.banner}>
                 <div className="container">
                     <h1 className={s.title}>О СТУДИИ <b>LIOR DEV</b></h1>

@@ -1,7 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px; /* 100px отступы с обеих сторон */
+  box-sizing: border-box; /* учитываем padding в общей ширине контейнера */
+}
+
 .banner {
   background-image: url("../../../../../liordev/lior-dev/src/Assets/image/AboutUs/banner.png");
   background-repeat: no-repeat;
-
+  background-size: cover;
   height: 422px;
   padding-top: 145px;
   padding-left: 128px;
@@ -95,7 +102,7 @@ h3 {
 
 .info_comment {
   background: url("../../Assets/image/AboutUs/Comment.png");
-  width: 1239px;
+  width: 1150px;
   height: 302px;
   top: 63.73px;
   border-radius: 20px;
