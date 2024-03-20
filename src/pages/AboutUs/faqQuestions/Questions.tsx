@@ -39,7 +39,7 @@ const FAQAccordion: React.FC = () => {
                 <div key={faq.id} className={s['faq-item']}>
                     <div className={s['faq-question']} onClick={() => toggleAccordion(index)}>
                         <span>{faq.faq_question}</span>
-                        {activeIndex === index ? '-' : '+'}
+                        {activeIndex === index ? '—' : '+'}
                     </div>
                     {activeIndex === index && (
                         <div className={s['faq-answer']}>

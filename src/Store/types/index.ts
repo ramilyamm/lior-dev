@@ -43,3 +43,8 @@ export interface TeamMember {
 	team_leordev_url_2?: string;
 	team_leordev_url_3?: string;
 }
+	team_job: string;
+	team_leordev_url_1?: string;
+	team_leordev_url_2?: string;
+	team_leordev_url_3?: string;
+}
