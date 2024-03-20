@@ -3,11 +3,11 @@ import s from './AboutUs.module.scss'
 import history from '../../Assets/image/AboutUs/history (2).png'
 import mission from '../../Assets/image/AboutUs/mission(2).png'
 import quotes from '../../Assets/image/AboutUs/quotes.png'
-import { liorAPI } from '../../../../../lior_dev/lior-dev/src/axios';
-import { TeamMember } from '../../../../../lior_dev/lior-dev/src/Store/types';
+import { liorAPI } from '../../axios/index';
+import { TeamMember } from '../../Store/types/index'
 import TeamMemberCard from './memberCard/MemberCard'
 import Questions from "./faqQuestions/Questions";
-import Form from '../../../../../lior_dev/lior-dev/src/pages/Form/Form';
+import Form from '../Form/Form';
 import {FORMERR} from "dns";
 
 const AboutUs: FC = () => {
