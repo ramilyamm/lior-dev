@@ -1,12 +1,14 @@
-import React, { FC,useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import s from './AboutUs.module.scss'
 import history from '../../Assets/image/AboutUs/history (2).png'
 import mission from '../../Assets/image/AboutUs/mission(2).png'
 import quotes from '../../Assets/image/AboutUs/quotes.png'
+import TeamMemberCard from './memberCard/MemberCard'
+import Questions from "./faqQuestions/Questions";
+import { Form } from 'react-router-dom';
 import { liorAPI } from '../../axios/index';
 import { TeamMember } from '../../Store/types/index'
 import TeamMemberCard from './memberCard/MemberCard'
-import Questions from "./faqQuestions/Questions";
 import Form from '../Form/Form';
 import {FORMERR} from "dns";
 
@@ -46,7 +48,7 @@ const AboutUs: FC = () => {
                         </div>
 
                         <div className={s.history_img}>
-                            <img src={history} alt="history"/>
+                            <img src={history} alt="history" />
                         </div>
 
                     </div>
@@ -58,7 +60,7 @@ const AboutUs: FC = () => {
                     <div className={s.history}>
 
                         <div className={s.history_img}>
-                            <img src={mission} alt="mission"/>
+                            <img src={mission} alt="mission" />
                         </div>
 
                         <div className={s.history_info}>
@@ -79,7 +81,7 @@ const AboutUs: FC = () => {
                     <div className={s.info}>
                         <h3>ИНФОРМАЦИЯ О КОМАНДЕ</h3>
                         <div className={s.info_comment}>
-                            <img src={quotes} alt="quotes"/>
+                            <img src={quotes} alt="quotes" />
                             <p className={s.info_text}>В LiorDev мы гордимся нашей командой - группой талантливых и увлеченных профессионалов,
                                 объединенных общей целью - создавать веб-решения, которые вдохновляют и вносят реальный вклад в успех наших клиентов.
                                 Каждый член команды вносит уникальный вклад в наш коллективный успех, и вот некоторые из ключевых лиц, стоящих за нашими проектами.</p>
@@ -107,18 +109,18 @@ const AboutUs: FC = () => {
                 <div className='container'>
                     <div className={s.faq}>
                         <div className={s.faq_table}>
-                          <div className={s.faq_text}>
-                              <span className={s.faq_title}>FAQ</span>
-                              <h4>Вопросы клиентов</h4>
-                          </div>
+                            <div className={s.faq_text}>
+                                <span className={s.faq_title}>FAQ</span>
+                                <h4>Вопросы клиентов</h4>
+                            </div>
                             <div className={s.faq_questions}>
-                                    <Questions/>
+                                <Questions />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <Form/>
+            <Form />
         </div>
     );
 };
