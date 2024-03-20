@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { liorAPI } from '../../../../../../lior_dev/lior-dev/src/axios';
 import s from './Questions.module.scss'
+import { liorAPI } from '../../../axios';
 
 interface FAQItem {
     id: number;

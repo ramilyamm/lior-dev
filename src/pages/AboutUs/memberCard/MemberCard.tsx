@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './MemberCard.module.scss'
-import { TeamMember } from '../../../../../../lior_dev/lior-dev/src/Store/types';
 import facebook from '../../../Assets/image/AboutUs/Facebook.png'
 import twitter from '../../../Assets/image/AboutUs/Twitter.png';
 import instagram from '../../../Assets/image/AboutUs/Instagram.png';
+import { TeamMember } from '../../../Store/types';
 
 
 
