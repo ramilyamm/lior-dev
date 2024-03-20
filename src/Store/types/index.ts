@@ -39,6 +39,7 @@ export interface TeamMember {
 	team_leordev_name: string;
 	team_leordev_description: string;
 	team_leordev_image: string;
+	team_job: string;
 	team_leordev_url_1?: string;
 	team_leordev_url_2?: string;
 	team_leordev_url_3?: string;
