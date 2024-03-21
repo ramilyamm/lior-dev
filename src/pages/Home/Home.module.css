@@ -18,16 +18,18 @@
         right: 0;
         top: 20%;
     }
-.cardBlock {
-    max-width: 1440px;
-    margin: 0 auto;
-}
 
-.title {
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    color: #fff;
-}
+    .cardBlock {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #fff;
+    }
 }

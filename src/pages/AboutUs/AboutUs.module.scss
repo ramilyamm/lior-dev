@@ -1,7 +1,7 @@
 
 
 .banner {
-  background-image: url("../../../../../liordev/lior-dev/src/Assets/image/AboutUs/banner.png");
+  background-image: url('../../Assets/image/AboutUs/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 422px;
@@ -9,7 +9,7 @@
   padding-left: 128px;
 }
 
-h1{
+h1 {
   width: 337px;
   height: 132px;
   top: 145px;
@@ -22,7 +22,7 @@ h1{
   text-align: center;
 }
 
-b{
+b {
   color: #7BD554;
 }
 
@@ -44,7 +44,7 @@ b{
 
 }
 
-.history_title  {
+.history_title {
   width: 372px;
   height: 46px;
   padding: 8px 23px 8px 23px;
@@ -80,7 +80,7 @@ b{
   justify-content: center;
   margin: 0 auto;
   margin-top: 100px;
-  height:366px;
+  height: 366px;
   left: 100px;
   gap: 21px;
 }
@@ -104,9 +104,14 @@ h3 {
 }
 
 .info_comment {
+<<<<<<< HEAD
 
   background: url("../../Assets/image/AboutUs/Comment.png");
   width: 1150px;
+=======
+  background: url('../../Assets/image/AboutUs/Comment.png');
+  width: 1200px;
+>>>>>>> 4284020679d61c2b20328dc226f9a8ad934be5aa
   height: 302px;
   top: 63.73px;
   border-radius: 20px;
@@ -116,7 +121,7 @@ h3 {
   align-items: center;
 }
 
-.info_text{
+.info_text {
   padding-top: 31px;
   width: 910px;
   height: 112px;
@@ -192,10 +197,10 @@ h3 {
 .faq_title {
   width: 123px;
   height: 30px;
-  padding: 0 42px 0 42px ;
+  padding: 0 42px 0 42px;
   gap: 10px;
   border-radius: 20px;
-  background:#4EAF4E;
+  background: #4EAF4E;
   color: #FFFFFF;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -206,7 +211,7 @@ h3 {
 
 }
 
-.faq_text h4{
+.faq_text h4 {
   width: 389px;
   height: 52px;
   font-family: 'Source Sans Pro', sans-serif;
