@@ -37,6 +37,7 @@ b {
 }
 
 .history_info {
+  margin: 0 auto;
   width: 590px;
   height: 333px;
   padding: 56px 0 0 0;
@@ -104,14 +105,8 @@ h3 {
 }
 
 .info_comment {
-<<<<<<< HEAD
-
   background: url("../../Assets/image/AboutUs/Comment.png");
   width: 1150px;
-=======
-  background: url('../../Assets/image/AboutUs/Comment.png');
-  width: 1200px;
->>>>>>> 4284020679d61c2b20328dc226f9a8ad934be5aa
   height: 302px;
   top: 63.73px;
   border-radius: 20px;
