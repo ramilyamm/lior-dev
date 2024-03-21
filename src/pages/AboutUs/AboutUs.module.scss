@@ -1,9 +1,4 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 100px;
-  box-sizing: border-box;
-}
+
 
 .banner {
   background-image: url("../../../../../liordev/lior-dev/src/Assets/image/AboutUs/banner.png");
@@ -34,6 +29,7 @@ b{
 .history {
   display: flex;
   margin-top: 100px;
+  justify-content: center;
   height: 416.91px;
   top: 655px;
   left: 100px;
@@ -79,11 +75,18 @@ b{
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
   margin-top: 100px;
   height:366px;
   left: 100px;
   gap: 21px;
+}
+
+.info_inner {
+  margin: 0 auto;
 }
 
 h3 {
@@ -101,6 +104,7 @@ h3 {
 }
 
 .info_comment {
+
   background: url("../../Assets/image/AboutUs/Comment.png");
   width: 1150px;
   height: 302px;
@@ -126,6 +130,10 @@ h3 {
 }
 
 .team {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
   width: 1200px;
   margin-top: 100px;
   top: 2135px;

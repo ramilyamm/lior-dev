@@ -3,6 +3,7 @@ import s from './AboutUs.module.scss'
 import history from '../../Assets/image/AboutUs/history (2).png'
 import mission from '../../Assets/image/AboutUs/mission(2).png'
 import quotes from '../../Assets/image/AboutUs/quotes.png'
+import circle from '../../Assets/image/AboutUs/Ellipse 183.png'
 import { liorAPI } from '../../axios/index';
 import { TeamMember } from '../../Store/types/index'
 import TeamMemberCard from './memberCard/MemberCard'
@@ -77,13 +78,15 @@ const AboutUs: FC = () => {
             <section>
                 <div className='container'>
                     <div className={s.info}>
-                        <h3>ИНФОРМАЦИЯ О КОМАНДЕ</h3>
-                        <div className={s.info_comment}>
-                            <img src={quotes} alt="quotes"/>
-                            <p className={s.info_text}>В LiorDev мы гордимся нашей командой - группой талантливых и увлеченных профессионалов,
-                                объединенных общей целью - создавать веб-решения, которые вдохновляют и вносят реальный вклад в успех наших клиентов.
-                                Каждый член команды вносит уникальный вклад в наш коллективный успех, и вот некоторые из ключевых лиц, стоящих за нашими проектами.</p>
-                        </div>
+                       <div className={s.info_inner}>
+                           <h3>ИНФОРМАЦИЯ О КОМАНДЕ</h3>
+                           <div className={s.info_comment}>
+                               <img src={quotes} alt="quotes"/>
+                               <p className={s.info_text}>В LiorDev мы гордимся нашей командой - группой талантливых и увлеченных профессионалов,
+                                   объединенных общей целью - создавать веб-решения, которые вдохновляют и вносят реальный вклад в успех наших клиентов.
+                                   Каждый член команды вносит уникальный вклад в наш коллективный успех, и вот некоторые из ключевых лиц, стоящих за нашими проектами.</p>
+                           </div>
+                       </div>
                     </div>
                 </div>
             </section>
