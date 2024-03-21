@@ -9,7 +9,6 @@ import { liorAPI } from '../../axios/index';
 import { TeamMember } from '../../Store/types/index'
 import TeamMemberCard from './memberCard/MemberCard'
 import Form from '../Form/Form';
-import {FORMERR} from "dns";
 
 const AboutUs: FC = () => {
     const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
