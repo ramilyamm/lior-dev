@@ -18,10 +18,10 @@ export const liorAPI = {
 	getPortfolio() {
 		return instance.get(`portfolio_leordev/`)
 	},
-	getTeam(){
+	getTeam() {
 		return instance.get(`team_leordev/`)
 	},
-	getFaq(){
+	getFaq() {
 		return instance.get(`faq_leordev/`)
 	},
 	getPhotos() {
@@ -30,12 +30,6 @@ export const liorAPI = {
 
 	getService() {
 		return instance.get(`offers/`)
-	},
-	getTeam() {
-		return instance.get(`team_leordev/`)
-	},
-	getFaq() {
-		return instance.get(`faq_leordev/`)
 	}
 
 }

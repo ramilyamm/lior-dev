@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './MemberCard.module.scss'
-import { TeamMember } from '../../../Store/types/index';
 import facebook from '../../../Assets/image/AboutUs/Facebook.png'
 import twitter from '../../../Assets/image/AboutUs/Twitter.png';
 import instagram from '../../../Assets/image/AboutUs/Instagram.png';

@@ -3,14 +3,11 @@ import s from './AboutUs.module.scss'
 import history from '../../Assets/image/AboutUs/history (2).png'
 import mission from '../../Assets/image/AboutUs/mission(2).png'
 import quotes from '../../Assets/image/AboutUs/quotes.png'
-import TeamMemberCard from './memberCard/MemberCard'
 import Questions from "./faqQuestions/Questions";
-import { Form } from 'react-router-dom';
 import { liorAPI } from '../../axios/index';
 import { TeamMember } from '../../Store/types/index'
 import TeamMemberCard from './memberCard/MemberCard'
 import Form from '../Form/Form';
-import {FORMERR} from "dns";
 
 const AboutUs: FC = () => {
     const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
