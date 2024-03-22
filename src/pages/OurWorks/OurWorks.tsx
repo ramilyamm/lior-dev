@@ -40,7 +40,7 @@ const OurWorks: FC = () => {
 			<div className={s.section_cards}>
 				<div className={s.btn_card}>
 					<button className={s.portfolio}>ПОРТФОЛИО</button>
-					<button className={s.contact_us}>связаться с нами</button>
+					<a href="https://wa.me/996705121928"><button className={s.contact_us}>связаться с нами</button></a>
 				</div>
 				<div className={s.cards}>
 					{loading ? (

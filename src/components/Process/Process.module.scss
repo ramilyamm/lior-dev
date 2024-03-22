@@ -26,7 +26,8 @@
         text-transform: uppercase;
     }
 
-    h3 {
+    .title {
+        white-space: nowrap;
         color: rgb(255, 255, 255);
         font-family: 'Source Sans Pro', sans-serif;
         margin-top: 21px;
@@ -101,7 +102,6 @@
 }
 
 
-@media(max-width:1140px) {}
 
 @media(max-width:1024px) {
     .project_wp {
