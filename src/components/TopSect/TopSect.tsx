@@ -10,7 +10,7 @@ const TopSect = () => {
                     <div className={s.LeftTitle}>
                         <p className={s.lior_text}>сoздание сайтов
                             Разрабатываем яркие креативные сайты “под ключ”</p>
-                        <a href="https://wa.me/+996 705 121 928"><button className={s.btn_header}>связаться с нами</button></a>
+                        <a href="https://wa.me/996705121928"><button className={s.btn_header}>связаться с нами</button></a>
                     </div>
                 </div>
                 <div className={s.RightTile}>

@@ -16,7 +16,7 @@ const Process = () => {
             <div className={`${s.project_wp} container`}>
                 <div className={s.project_left} >
                     <h2>ВИЗУАЛИЗАЦИЯ УСПЕХА</h2>
-                    <h3>Наш проектный процесс</h3>
+                    <h3 className={s.title}>Наш проектный процесс</h3>
                     <p className={s.description}>Понимание того, что вы создаете, почему это создается
                         и как мы собираемся использовать опыт вашего бренда
                         с помощью нашего экспертного UX / UI-дизайна.
