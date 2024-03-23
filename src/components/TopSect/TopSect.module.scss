@@ -51,7 +51,6 @@
         .lior_text {
             font-family: "Source Sans 3", sans-serif;
             color: rgb(255, 255, 255);
-            font-size: 44px;
             font-weight: 700;
             line-height: 126%;
             letter-spacing: 6%;
@@ -97,7 +96,8 @@
 }
 
 @media (max-width:960px) {
-    .lior_text {
-        font-size: 40px;
+    .bg .BgBox .LeftTitle .lior_text {
+        width: 100%;
+        font-size: 30px;
     }
 }

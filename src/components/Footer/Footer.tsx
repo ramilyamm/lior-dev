@@ -28,7 +28,7 @@ const Footer: FC = () => {
 								<a href=''>
 									<img src={inst} alt='inst' />
 								</a>
-								<a href=''>
+								<a href='https://wa.me/996705121928'>
 									<img src={whatsapp} alt='whatsapp' />
 								</a>
 							</div>

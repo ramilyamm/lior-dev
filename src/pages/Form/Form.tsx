@@ -72,7 +72,7 @@ const Form: FC = () => {
                             <h2>Связаться с нами. Это просто.</h2>
                             <h3>ЗАКАЗ УСЛУГ, IT КОНСУЛЬТАЦИЯ</h3>
                             <a href="tel: +996 705 121 928">+996 705 121 928</a>
-                            <a className={s.form_mail} href="mailto:liordev@gmail.com"><span>E-mail:</span> liordev@gmail.com</a>
+                            <a className={s.form_mail} href="mailto:info.liordev@gmail.com"><span>E-mail:</span> info.liordev@gmail.com</a>
                         </div>
 
                         <form className={s.form_right} onSubmit={handleForm}>
