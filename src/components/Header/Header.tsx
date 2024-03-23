@@ -19,11 +19,11 @@ const Header: FC = () => {
                 <div className={s.icon}>
                     <div className={s.icon_block}>
                         <img src={adres} alt="adres" />
-                        <p>Адрес компании здесь</p>
+                        <p>Ибраимова 115/1 Бизнес центр Асыл-Таш, 7 этаж</p>
                     </div>
                     <div className={s.icon_block}>
                         <img src={tel} alt="tel" />
-                        <p>+996 555 222 333</p>
+                        <p>+996 705 121 928</p>
                     </div>
                 </div>
             </div>

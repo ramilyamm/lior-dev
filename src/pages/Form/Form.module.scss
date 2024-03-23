@@ -203,6 +203,10 @@
 		justify-content: center;
 		align-items: center;
 		max-width: 100%;
+
+		h3 {
+			text-align: center;
+		}
 	}
 
 	.inputs_wrapper {
@@ -215,6 +219,7 @@
 		width: 100%;
 	}
 }
+
 @media (max-width: 1030px) {
 	.form_left {
 		padding: 0;
