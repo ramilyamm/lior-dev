@@ -38,7 +38,7 @@ const Home: FC = () => {
 			<Use />
 			<Portfolio />
 			<Partners />
-			<div className={s.cardBlock}>
+			<div className={`${s.cardBlock} container`}>
 				<h2 className={s.title}>ЧТО ГОВОРЯТ ПРО НАС</h2>
 				<ReviewsCard />
 			</div>
